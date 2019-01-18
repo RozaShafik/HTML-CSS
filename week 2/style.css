@@ -1,0 +1,119 @@
+body {
+  background-color: #e6e6e6;
+}
+h1 {
+  color: #6600ff;
+  background-color: #fff;
+  width: 100%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+h2 {
+  display: block;
+  clear: both;
+  color: #ff1493;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+h3 {
+  color: #b380ff;
+}
+/* with float */
+ #grid-floats>.grid-item {
+  float: left;
+  width: 25%;
+}
+ #grid-floats>li:first-child {
+  width: 50%;
+}
+.grid-item > img {
+  width: 300px;
+  height: 300px;
+}
+.grid-item > p {
+  width: 250px;
+  height: 250px;
+}
+li:first-child {
+  width: 50%;
+}
+li:first-child > img {
+  width: 500px;
+  height: 300px;
+}
+
+/* with flexbox */
+#grid-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#grid-flex > li:first-child {
+  width: 50%;
+}
+/* responsive */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  /* with float */
+  #grid-floats > .grid-item {
+    float: left;
+    width: 50%;
+  }
+  #grid-floats > li:first-child {
+    width: 100%;
+  }
+  .grid-item > img {
+    width: 150px;
+    height: 150px;
+    margin-top: -100px;
+  }
+  .grid-item > p {
+    width: 150px;
+  }
+  li:first-child > img {
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  li:first-child > h3 {
+    width: 260px;
+  }
+  li:first-child > p {
+    width: 400px;
+    height: auto;
+  }
+  .grid-item > h3 {
+    width: 140px;
+    height: 130px;
+  }
+  #grid-flex > li:first-child {
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* with float */
+  #grid-floats > .grid-item {
+    float: left;
+    width: 33.33%;
+  }
+  .grid-item > img {
+    width: 150px;
+    height: 150px;
+    margin-top: -100px;
+  }
+  .grid-item > p {
+    width: 230px;
+  }
+  .grid-item > h3 {
+    width: 200px;
+    height: 130px;
+  }
+  li:first-child > img {
+    width: 300px;
+    height: 300px;
+  }
+  li:nth-child(2) > img {
+    width: 300px;
+    height: 300px;
+  }
+}
