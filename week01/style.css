@@ -1,0 +1,22 @@
+body{
+       background-color:white;
+    border:dotted;
+}
+h1{
+    color:black;
+    text-align:left;
+}
+p{
+    font-family:"time new roman", times, serif;
+    font-size:20px;
+    padding:10px 20px
+}
+img{
+width:100px;
+height:100px;
+transform: rotate(90deg);
+border-radius: 50px;
+position:absolute;
+top:40px;
+right:40px;
+}
